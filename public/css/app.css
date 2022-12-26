@@ -1,0 +1,79 @@
+/* root */
+:root{
+    --light: rgb(255, 245, 255);
+    --light-glass: hsla(0,0%,100%,.2);
+    --light-glass-hover: hsla(0,0%,100%,.5);
+    --header: #220150;
+    --icon-color: #d358fc;
+
+    /* btn colors */
+    --btn-success: rgb(2, 181, 92);
+}
+/* Base and Layout */
+body{
+    scroll-behavior: smooth;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+.wrapper{
+    height: 100vh;
+    width: auto;
+    background-image: url(../image/BG...jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.navbar{
+    position: fixed;
+    background: var(--header);
+}
+/* Typography */
+:is(.text-light){
+    color: var(--light);
+}
+a{
+    text-decoration: none;
+    text-align: center;
+}
+label{
+    color: var(--light);
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+/* Forms */
+input.form-control{
+    background-color: var(--light-glass);
+    caret-color: var(--light);
+    color: var(--light);
+}
+input.form-control:focus{
+    color: var(--light);
+    background-color: var(--light-glass);
+    border-color: var(--light);
+    box-shadow: none;
+}
+/* Components eg. btn, card, navbar etc. */
+.card-glass{
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    border: 1px solid rgba(230, 230, 230, 0.92);
+}
+.btn-glass{
+    width: 100%;
+    text-align: center;
+    background: var(--light-glass);
+    border: 1px solid var(--light);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color .15s ease;
+}
+.btn-glass:hover{
+    background: var(--light-glass-hover);
+}
+.btn-success {
+    background: var(--btn-success);
+}
+/* utils eg. margin, padding etc */
