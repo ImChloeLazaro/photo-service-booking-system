@@ -118,7 +118,7 @@ $user->CancelBooking();
                                                 </div>
 
                                                 <div class="form-group">
-                                                    <label for="">Service</label>
+                                                    <label for="">Package</label>
                                                     <select name="package" class="form-select text-light" style="background: transparent;" required>
                                                         <option class="bg-dark" value="">--Select Package--</option>
                                                         <option class="bg-dark" value="Service Charge">Service Charge</option>
